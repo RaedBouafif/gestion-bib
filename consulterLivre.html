@@ -4,9 +4,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GestBib</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/css/ready.css">
+    <link rel="stylesheet" href="assets/css/demo.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
-<body>
+<body style="display: flex;flex-direction: column; align-items: center;">
+    <div class="sidebar">
+        <div class="scrollbar-inner sidebar-wrapper">
+            <div class="user">
+                <div class="photo">
+                    <img src="assets/img/profile.jpg">
+                </div>
+                <div class="info">
+                    <a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+                        <span>
+                            Hizrian
+                            <span class="user-level">Administrator</span>
+                            <span class="caret"></span>
+                        </span>
+                    </a>
+                    <div class="clearfix"></div>
     
+                    <div class="collapse in" id="collapseExample" aria-expanded="true" style="">
+                        <ul class="nav">
+                            <li>
+                                <a href="#profile">
+                                    <span class="link-collapse">My Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#edit">
+                                    <span class="link-collapse">Edit Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#settings">
+                                    <span class="link-collapse">Settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav">
+                <li class="nav-item active">
+                    <a href="index.html">
+                        <i class="la la-home"></i>
+                        <p>Accueil</p>
+                    </a>
+                <li class="nav-item active icon-class">
+                    <a href="client.html">
+                        <i class="la la-user"></i>
+                        <p>client</p>
+                    </a>
+                </li>
+                <li class="nav-item active icon-class">
+                    <a href="addLivre.html">
+                        <i class="la la-book"></i>
+                        <p>ajouter livre</p>
+                    </a>
+                </li>
+                <li class="nav-item active icon-class">
+                    <a href="consulterLivre.html">
+                        <i class="la la-server"></i>
+                        <p>Consulter livres</p>
+                    </a>
+                </li>
+                <li class="nav-item active icon-class">
+                    <a href="emprunt.html">
+                        <i class="la la-hand-paper-o"></i>
+                        <p>Emprunter un livre</p>
+                    </a>
+                </li>
+                <li class="nav-item active icon-class">
+                    <a href="RendreLivre.html">
+                        <i class="la la-check"></i>
+                        <p>Rendre un livre</p>
+                    </a>
+                </li>
+    
+            </ul>
+        </div>
+    </div>
+    <div style="margin-left: 110px;margin-top: 50px;" class="col-6">
+        <h2 style="font-weight: 800;font-size: 17px;">Tout les Livres</h2>
+        <table class="table table-head-bg-primary">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">titre</th>
+                    <th scope="col">nombre copie</th>
+                    <th scope="col">idLivre</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="margin-left: 110px;margin-top: 50px;" class="col-6">
+        <h2 style="font-weight: 800;font-size: 17px;">Livre empruntés</h2>
+        <table class="table table-head-bg-primary">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">titre</th>
+                    <th scope="col">nombre copie</th>
+                    <th scope="col">idLivre</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
